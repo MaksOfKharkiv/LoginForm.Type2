@@ -1,1 +1,1 @@
-# LoginForm.Type2
+# Login Form. Type 2
