@@ -13,19 +13,90 @@
                         <h3 class="header__title align-center text-uppercase">l<span class="color-red">o</span>gin f<span class="color-red">o</span>rm</h3>
                 </div>
         </header>
-        <main class="form">
-                <section class="form__left">
-                        <div class="form__title">
+        <main class="main">
+                <section class="main__left">
+                        <div class="main__title flex-center">
                                 <img src="./images/check.png" alt="check icon">
-                                <h3 class="form__section-title color-red text-uppercase">normal login</h3>
+                                <h3 class="main__section-title color-red text-uppercase">normal login</h3>
+                        </div>
+                        <form class="form__input-box main__input-line">
+                                <div class="form__input-wrapper">
+                                        <input type="text" minlength="4" id="username" placeholder="Username" class="form__input-field" required>
+                                        <label for="username" class="form__input-label flex-center">
+                                                <img src="./images/username.png" alt="username icon">
+                                        </label>
+                                </div>
+                                <div class="form__input-wrapper">
+                                        <input type="password" minlength="7" pattern="(?=.*\d)(?=.*[a-z]).{7,}" id="password" placeholder="Password" class="form__input-field" required>
+                                        <label for="username" class="form__input-label flex-center">
+                                                <img src="./images/password.png" alt="password icon">
+                                        </label>
+                                </div>
+                                <div class="form__input-wrapper">
+                                        <button class="form__input-button text-uppercase">
+                                                <span>go</span>
+                                        </button>
+                                </div>
+                        </form>
+                        <div class="main__content">
+                                <h4 class="main__content-subtitle align-center">Want to make a free account ?</h4>
+                                <div class="main__content-wrapper main__input-line">
+                                        <a href="#" class="main__content-button align-center text-uppercase">
+                                                create me
+                                        </a>
+                                </div>
+                        </div>
+                        <div class="main__content align-center">
+                                <a href="#" class="main__content-subtitle main__content-bottomLink text-italic">Forgot Username or Password ?</a>
                         </div>
                 </section>
-                <section class="form__right">
-                        <div class="form__title">
-                                <h3 class="form__section-title text-uppercase">or <span class="color-red"> social login</span></h3>
+                <section class="main__right">
+                        <div class="main__title flex-center">
+                                <h3 class="main__section-title text-uppercase">or <span class="color-red"> social login</span></h3>
+                        </div>
+                        <div class="main__content main__input-redline">
+                                <p class="main__content-text">
+                                        If you want to login into your account with 
+                                        <span class="facebook">FaceBook</span> or <span class="twitter">Twitter</span> 
+                                        now you can.<br>Just click on one of the buttons bellow ! 
+                                </p>
+                        </div>
+                        <div class="main__content main__input-line">
+                                <a href="#" class="main__social-link main__social-facebook">
+                                        <span class="main__social-icon flex-center">
+                                                <img src="./images/facebook.png" alt="facebook icon">
+                                        </span>
+                                        <span class="main__social-text text-uppercase flex-center">login with facebook</span>
+                                </a>
+                                <a href="#" class="main__social-link main__social-twitter">
+                                        <span class="main__social-icon flex-center">
+                                                <img src="./images/twitter.png" alt="twitter icon">
+                                        </span>
+                                        <span class="main__social-text text-uppercase flex-center">login with twitter</span>
+                                </a>
+                        </div>
+                        <div class="main__content flex-center">
+                                <img src="./images/info.png" class="main__content-info" alt="info icon">
+                                <a href="#" class="main__content-subtitle main__content-bottomLink text-italic">Problems with login ?</a>
                         </div>
                 </section>
+                <div class="main__apps-ring main__apps-ring1">
+                        <div class="main__apps-circle"></div>
+                        <div class="main__apps-circle main__apps-circle2"></div>
+                        <div class="main__apps-mid"></div>
+                </div>
+                <div class="main__apps-ring main__apps-ring2">
+                        <div class="main__apps-circle"></div>
+                        <div class="main__apps-circle main__apps-circle2"></div>
+                        <div class="main__apps-mid"></div>
+                </div>
         </main>
+        <footer class="footer">
+                <div class="container flex-center">
+                        <a href="https://dribbble.com/shots/1605868-Login-Form-Freebies">Template source</a>
+                </div>
+        </footer>
+</div>
 <script src="./js/scripts.js"></script>
 </body>
 </html>
